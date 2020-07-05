@@ -125,7 +125,7 @@ fi
 
 # Add permissions to make app runnable
 if [[ "$BUILD_TARGET" == "StandaloneOSX" ]]; then
-  ADD_PERMISSIONS_PATH=$BUILD_PATH_FULL/StandaloneOSX.app/Contents/MacOS/*
+  ADD_PERMISSIONS_PATH=$CUSTOM_BUILD_PATH.app/Contents/MacOS/*
   echo "Making the following path executable: $ADD_PERMISSIONS_PATH"
   chmod +x $ADD_PERMISSIONS_PATH
 fi
